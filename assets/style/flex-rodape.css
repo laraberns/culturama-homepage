@@ -1,0 +1,11 @@
+.rodape{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    justify-content: space-between;
+    column-gap: .5rem;
+}
+
+.rodape__logo{
+    align-self: end;
+}

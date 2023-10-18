@@ -1,0 +1,56 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.lista-categorias-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+@media(min-width: 720px) {
+    .menu {
+        display: grid;
+        justify-content: space-between;
+        grid-template-areas:
+            "culturama categorias"
+            "pesquisar pesquisar";
+        padding: 20px 40px;
+        row-gap: 0px;
+    }
+
+    .lista-categorias-menu {
+        gap: 50px;
+    }
+
+    .titulo-menu {
+        grid-area: culturama;
+    }
+
+    .lista-categorias-menu {
+        grid-area: categorias;
+    }
+
+    .menu__pesquisar {
+        grid-area: pesquisar;
+        align-self: center;
+        justify-self: center;
+    }
+
+}
+
+@media(min-width: 1440px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+    }
+
+    .lista-categorias-menu {
+        order: 3;
+    }
+}

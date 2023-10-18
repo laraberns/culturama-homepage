@@ -1,0 +1,42 @@
+.categorias__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+@media(min-width: 720px) {
+    .categorias__lista {
+        display: grid;
+        grid-template-areas:
+            "shows arte"
+            "teatro fotografia"
+            "festivais tecnologia"
+            'cinema design';
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+    }
+
+    .shows {
+        grid-area: shows;
+    }
+
+    .arte {
+        grid-area: arte;
+    }
+
+    .teatro {
+        grid-area: teatro;
+    }
+
+    .fotografia {
+        grid-area: fotografia;
+    }
+
+    .festivais {
+        grid-area: festivais;
+    }
+
+    .tecnologia {
+        grid-area: tecnologia;
+    }
+}

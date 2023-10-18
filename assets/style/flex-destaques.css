@@ -1,0 +1,40 @@
+.destaques {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.destaques__barra {
+    flex-grow: 1;
+}
+
+@media(min-width: 1440px) {
+    .categorias {
+        display: grid;
+        grid-template-areas: 
+        "categorias-titulo categorias-titulo"
+        "categorias destaques"
+        "categorias img-destaques";
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: calc(50% - 0.75rem);
+    }
+
+    .categorias__titulo{
+        grid-area: categorias-titulo;
+    }
+
+    .categorias__lista{
+        grid-area: categorias;
+    }
+
+    .categorias__destaques{
+        grid-area: destaques;
+    }
+
+    .categorias__imagem{
+        grid-area: img-destaques;
+    }
+}
